@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Ai | A clone by Ratul</title>
+
+    <script
+      src="https://kit.fontawesome.com/7f84ab511b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black m-0 p-0 text-white font-sans">
+    <nav class="w-full h-14 flex justify-between items-center mt-3 px-5">
+      <div class="flex items-center gap-2 md:gap-4">
+        <p class="text-[1.7rem] font-semibold">OpenAI</p>
+        <!-- <i
+          class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-lg cursor-pointer hover:text-[#c6cbd4]"
+        ></i> -->
+        <img
+          src="sidebar.png"
+          alt=""
+          class="h-[1.3rem] w-[1.3rem] opacity-75 hidden md:block"
+        />
+      </div>
+      <div class="hidden md:flex items-center gap-5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-4 text-slate-400 hover:text-slate-50 hover:cursor-pointer"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          />
+        </svg>
+        <div
+          class="bg-[#1e1f1e] px-4 py-2 rounded-2xl hover:bg-[#3c3d3c] cursor-pointer"
+        >
+          Log in
+        </div>
+      </div>
+      <div class="md:hidden p-3 rounded-lg cursor-pointer">
+        <img
+          src="sidebar.png"
+          alt=""
+          class="h-[1.3rem] w-[1.3rem] opacity-75 md:hidden"
+        />
+      </div>
+    </nav>
+
+    <section
+      class="flex flex-col items-center justify-center text-center mt-[5rem] md:mt-[15rem]"
+    >
+      <h1 class="text-2xl md:text-4xl font-bold">What can I help with?</h1>
+
+      <div class="relative w-[90%] md:w-[40rem] mt-8">
+        <textarea
+          id="questionInput"
+          class="block w-full h-[7rem] bg-[#1e1f1e] rounded-3xl p-4 focus:outline-0 focus:border-0 resize-none text-white leading-normal"
+          placeholder="Type your question here..."
+        ></textarea>
+        <div
+          id="arrowButton"
+          class="absolute bottom-3 right-3 bg-[#333] w-10 h-10 flex items-center justify-center rounded-full cursor-pointer"
+        >
+          <i
+            class="fa-solid fa-arrow-up text-gray-400 text-lg pointer-events-none"
+          ></i>
+        </div>
+      </div>
+
+      <div
+        class="suggestion-boxes flex my-3 w-[90%] flex-wrap justify-between md:justify-center items-center"
+      >
+        <p
+          class="px-5 py-2 rounded-3xl border-[#3e413e] border-2 mb-4 hover:border-[#5a5e5a] hover:bg-[#403838] transition-all"
+        >
+          Search with ChatGPT
+        </p>
+        <p
+          class="px-5 py-2 rounded-3xl border-[#3e413e] border-2 mb-4 hover:border-[#5a5e5a] hover:bg-[#403838] transition-all"
+        >
+          Talk with ChatGPT
+        </p>
+        <p
+          class="px-5 py-2 rounded-3xl border-[#3e413e] border-2 mb-4 hover:border-[#5a5e5a] hover:bg-[#403838] transition-all"
+        >
+          Research
+        </p>
+        <p
+          class="px-5 py-2 rounded-3xl border-[#3e413e] border-2 mb-4 hover:border-[#5a5e5a] hover:bg-[#403838] transition-all"
+        >
+          More
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="grid grid-cols-1 md:grid-cols-3 gap-8 w-[90%] mx-auto my-20"
+    >
+      <!-- Cards -->
+      <div class="relative group cursor-pointer text-center">
+        <img
+          src="https://images.ctfassets.net/kftzwdyauwt9/3gDBc446Nxn0ByyZMZdFVD/1e993b5470a4fc82279d2099ddef8321/Catcus_Heatmap_2.png?w=1920&q=90&fm=webp"
+          class="w-full h-52 object-cover rounded-xl"
+        />
+        <h1 class="mt-2 font-semibold">Cactus Heatmap</h1>
+        <p class="text-sm mt-1">
+          Analysis <span class="text-slate-400">Mar 5, 2024 6 min read</span>
+        </p>
+      </div>
+      <div class="relative group cursor-pointer text-center">
+        <img
+          src="https://images.ctfassets.net/kftzwdyauwt9/1IwdgqUJtCGfqRc30rCYGT/83084c952e72223d0054f8677a0b6787/Estee-Lauder.png?w=1920&q=90&fm=webp"
+          class="w-full h-52 object-cover rounded-xl"
+        />
+        <h1 class="mt-2 font-semibold">Estee Lauder</h1>
+        <p class="text-sm mt-1">
+          Review <span class="text-slate-400">Apr 10, 2024 7 min read</span>
+        </p>
+      </div>
+      <div class="relative group cursor-pointer text-center">
+        <img
+          src="https://images.ctfassets.net/kftzwdyauwt9/7qG03ZFS97bSx0he9cDXpO/1e25a77e3fc72dff3af2b78e61bcb932/Grab.png?w=1920&q=90&fm=webp"
+          class="w-full h-52 object-cover rounded-xl"
+        />
+        <h1 class="mt-2 font-semibold">Grab</h1>
+        <p class="text-sm mt-1">
+          Case Study <span class="text-slate-400">May 15, 2024 5 min read</span>
+        </p>
+      </div>
+      <div class="relative group cursor-pointer text-center">
+        <img
+          src="https://images.ctfassets.net/kftzwdyauwt9/2oDKH92TW20YedrGjlZ2bO/aee7f60283553fa4f600d6f38fddbd0f/My_dog__the_math_tutor.jpg?w=1920&q=90&fm=webp"
+          class="w-full h-52 object-cover rounded-xl"
+        />
+        <h1 class="mt-2 font-semibold">Math Tutor Dog</h1>
+        <p class="text-sm mt-1">
+          Tutorial <span class="text-slate-400">Jun 20, 2024 9 min read</span>
+        </p>
+      </div>
+      <div class="relative group cursor-pointer text-center">
+        <img
+          src="https://images.ctfassets.net/kftzwdyauwt9/28F67zz5AlWxB55evPfpSH/10051356a9c2ab614e0d9d1cac48170b/Web_Card_1.1.png?w=1920&q=90&fm=webp"
+          class="w-full h-52 object-cover rounded-xl"
+        />
+        <h1 class="mt-2 font-semibold">Web Card</h1>
+        <p class="text-sm mt-1">
+          Guide <span class="text-slate-400">Jul 25, 2024 8 min read</span>
+        </p>
+      </div>
+      <div class="relative group cursor-pointer text-center">
+        <img
+          src="https://images.ctfassets.net/kftzwdyauwt9/5zjjS8SnA1NgOA0ySDpA6z/bc9531b3706f20553a69a64a3737e0c1/Stargate_Blog_Thumbnail_New.png?w=1920&q=90&fm=webp"
+          class="w-full h-52 object-cover rounded-xl"
+        />
+        <h1 class="mt-2 font-semibold">Stargate Blog</h1>
+        <p class="text-sm mt-1">
+          Insight <span class="text-slate-400">Aug 30, 2024 10 min read</span>
+        </p>
+      </div>
+      <div class="relative group cursor-pointer text-center">
+        <img
+          src="https://images.ctfassets.net/kftzwdyauwt9/BQXodBZ63FtQq6CGcPQQh/955ea49d3cf09e7ad33129d8a81b4087/o3-mini_1.1.png?w=1920&q=90&fm=webp"
+          class="w-full h-52 object-cover rounded-xl"
+        />
+        <h1 class="mt-2 font-semibold">O3 Mini</h1>
+        <p class="text-sm mt-1">
+          Report <span class="text-slate-400">Sep 12, 2024 4 min read</span>
+        </p>
+      </div>
+      <div class="relative group cursor-pointer text-center">
+        <img
+          src="https://images.ctfassets.net/kftzwdyauwt9/6cl3M6bIMNc5gIRSsJCQT4/92a5e4927ab415cee7a364320384a94d/Fishing_for_first_timers.jpg?w=1920&q=90&fm=webp"
+          class="w-full h-52 object-cover rounded-xl"
+        />
+        <h1 class="mt-2 font-semibold">Fishing for First Timers</h1>
+        <p class="text-sm mt-1">
+          Tips <span class="text-slate-400">Oct 18, 2024 7 min read</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- get started section -->
+    <section
+      class="bg-[#1e1f1e] w-[90%] mx-auto my-20 rounded-2xl h-[20rem] flex flex-col justify-center items-center"
+    >
+      <h1 class="font-semibold text-2xl md:text-3xl">
+        Get Started with ChatGPT
+      </h1>
+      <a
+        target="_blank"
+        href="https://openai.com/chatgpt/download/"
+        class="px-4 py-1 rounded-3xl bg-[#353735] my-4"
+        >Download</a
+      >
+    </section>
+
+    <footer class="">
+      <div
+        class="container flex flex-col gap-7 md:flex md:flex-row md:flex-wrap md:gap-8 w-[90%] mx-auto my-20"
+      >
+        <div class="box flex flex-col gap-2">
+          <p class="text-slate-400 font-semibold">Our Research</p>
+          <p>Research Index</p>
+          <p>Research Overview</p>
+          <p>Research Residency</p>
+        </div>
+
+        <div class="box flex flex-col gap-2">
+          <p class="text-slate-400 font-semibold">Latest Advancements</p>
+          <p>OpenAI o1</p>
+          <p>OpenAI o1-mini</p>
+          <p>GPT-4o</p>
+          <p>GPT-4o mini</p>
+          <p>Sora</p>
+        </div>
+
+        <div class="box flex flex-col gap-2">
+          <p class="text-slate-400 font-semibold">Safety</p>
+          <p>Safety Approach</p>
+          <p>Security & Privacy</p>
+        </div>
+
+        <div class="box flex flex-col gap-2">
+          <p class="text-slate-400 font-semibold">ChatGPT</p>
+          <p>Explore ChatGPT</p>
+          <p>Team</p>
+          <p>Enterprise</p>
+          <p>Education</p>
+          <p>Pricing</p>
+          <p>Download</p>
+        </div>
+
+        <div class="box flex flex-col gap-2">
+          <p class="text-slate-400 font-semibold">Sora</p>
+          <p>Sora Overview</p>
+          <p>Features</p>
+          <p>Pricing</p>
+          <p>Help Center ↗</p>
+          <p>Sora login ↗</p>
+        </div>
+
+        <div class="box flex flex-col gap-2">
+          <p class="text-slate-400 font-semibold">For Business</p>
+          <p>Overview</p>
+        </div>
+
+        <div class="box flex flex-col gap-2">
+          <p class="text-slate-400 font-semibold">Company</p>
+          <p>About us</p>
+          <p>Our Charter</p>
+          <p>Careers</p>
+          <p>Brand</p>
+        </div>
+
+        <div class="box flex flex-col gap-2">
+          <p class="text-slate-400 font-semibold">More</p>
+          <p>News</p>
+          <p>Stories</p>
+        </div>
+
+        <div class="box flex flex-col gap-4">
+          <p class="text-slate-400 font-semibold">Terms & Policies</p>
+          <p>Terms of Use</p>
+          <p>Privacy Policy</p>
+          <p>Security</p>
+          <p>Other Policies</p>
+        </div>
+      </div>
+
+      <div
+        class="last w-[90%] flex flex-col md:flex-row mx-auto my-2.5 justify-between items-center gap-4"
+      >
+        <div class="socials flex gap-4 md:gap-7">
+          <div class="x"></div>
+          <div class="youtube">
+            <i class="fa-brands fa-x-twitter text-lg"></i>
+          </div>
+          <div class="linkedin">
+            <i class="fa-brands fa-youtube text-lg"></i>
+          </div>
+          <div class="github">
+            <i class="fa-brands fa-github text-lg"></i>
+          </div>
+          <div class="instagram">
+            <i class="fa-brands fa-instagram text-lg"></i>
+          </div>
+          <div class="tiktok">
+            <i class="fa-brands fa-tiktok text-lg"></i>
+          </div>
+          <div class="discord">
+            <i class="fa-brands fa-discord text-lg"></i>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="font-semibold">OpenAI ©2015-2025</p>
+        </div>
+        <div class="language cursor-pointer flex rounded-3xl bg-[#383b38]">
+          <p class="pl-3 pr-2 py-2 font-semibold">English</p>
+          <p class="text-slate-400 pr-3 py-2">United States</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
